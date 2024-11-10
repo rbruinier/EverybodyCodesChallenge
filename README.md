@@ -8,4 +8,4 @@ Links to the solutions:
  
 # Uses my Advent of Code tools
 
- [https://github.com/rbruinier/AdventOfCode]https://github.com/rbruinier/AdventOfCode
+ https://github.com/rbruinier/AdventOfCode
