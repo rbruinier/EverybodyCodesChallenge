@@ -59,16 +59,14 @@ final class Quest01Solver: QuestSolver {
 		let a: Enemy?
 		let b: Enemy?
 
+		var actualEnemies: [Enemy] {
+			[a, b].compactMap { $0 }
+		}
+
 		var potions: Int {
-			if let a, b == nil {
-				a.potions
-			} else if let b, a == nil {
-				b.potions
-			} else if let a, let b {
-				a.potions + b.potions + 2
-			} else {
-				0
-			}
+			let basePotions = actualEnemies.map(\.potions).reduce(0, +)
+
+			return basePotions + ((actualEnemies.count - 1) * actualEnemies.count)
 		}
 	}
 
