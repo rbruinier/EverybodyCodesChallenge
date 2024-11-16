@@ -7,8 +7,20 @@ final class QuestSolver: QuestSolver {
 	let expectedResults: [any Equatable] = [
 		0,
 		0,
-		0
+		0,
 	]
+
+	let questNumber: Int = 0
+
+	private var inputPart1: InputPart1!
+	private var inputPart2: InputPart2!
+	private var inputPart3: InputPart3!
+
+	private struct InputPart1 {}
+
+	private struct InputPart2 {}
+
+	private struct InputPart3 {}
 
 	func solvePart(_ part: Int) -> any Equatable {
 		switch part {
@@ -29,21 +41,6 @@ final class QuestSolver: QuestSolver {
 
 	private func solvePart3() -> any Equatable {
 		0
-	}
-
-	let questNumber: Int = 1
-
-	private var inputPart1: InputPart1!
-	private var inputPart2: InputPart2!
-	private var inputPart3: InputPart3!
-
-	private struct InputPart1 {
-	}
-
-	private struct InputPart2 {
-	}
-	
-	private struct InputPart3 {
 	}
 
 	func parseInput(forPart part: Int, rawString: String) {

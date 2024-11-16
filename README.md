@@ -1,4 +1,6 @@
-# Everybody Code
+# Everybody Codes
+
+Challenge site: https://everybody.codes/events
 
 Links to the solutions:
 
